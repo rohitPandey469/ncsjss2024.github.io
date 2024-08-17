@@ -1,0 +1,13 @@
+.loader {
+  position: fixed;
+  width: 60vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 780px) {
+  .loader {
+    width: 100vw;
+  }
+}

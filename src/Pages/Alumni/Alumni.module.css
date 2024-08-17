@@ -1,0 +1,149 @@
+/* HeadingCont------------------------------------------- */
+ 
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 11.12rem;
+    margin-bottom: 5rem;
+}
+
+.teamContent {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    max-width: 100rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header {
+    text-align: center;
+    font-family: Inter;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    /* 3.6rem */
+    letter-spacing: 0.06rem;
+    background: linear-gradient(180deg, #FFF 0%, #434343 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 100%;
+}
+  
+.content {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 1.6875rem */
+    letter-spacing: 0.01125rem;
+    text-transform: capitalize;
+    opacity: 0.6;
+    max-width: 60rem;
+    width: 100%;
+    padding: 0rem 2rem;
+}
+
+/* 4th Year Cards -------------------------------------------- */
+
+.partition{
+    margin-top: 6.12rem;
+    display: flex;
+    justify-content: center;
+    width:100%;
+    position: relative;
+}
+
+.underlay{
+    width: 6rem;
+    height: 3rem;
+    background-color: #030520;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 2;
+}
+
+.line{
+    width: 50%;
+    text-align: center;
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 2.7rem */
+    letter-spacing: 0.045rem;
+    background: linear-gradient(180deg, #FFF 0%, #434343 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 3;
+}
+
+.hrline{
+    height: 2px;
+    max-width: 1920px;
+    width: 0vw;
+    background-color: #EDF5FF;
+    opacity: 0.2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.cardcont{
+    box-sizing: border-box;
+    margin-top: 4rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+    max-width: 65rem;
+    background-color: #030520;
+}
+
+/* Tablet styling */
+/* if something needs to be same for both tablet and mobile change it just in tablet */
+@media screen and (max-width: 780px) {
+    
+}
+
+/* Phone styling */
+@media screen and (max-width: 590px) {
+    .header{
+        font-size: 2rem;
+    }
+ 
+    .main{
+        margin-top: 7rem;
+    }
+
+    .cardcont{
+        padding: 1rem;
+        gap: 1rem;
+    }
+}
+
+/* forced styling */
+@media screen and (max-width: 400px) {
+    .content{
+        font-size: 0.96rem;
+    }
+}
+@media (min-width:401px) and (max-width: 600px) {
+    .content{
+        font-size: 1.1rem;
+    }
+}

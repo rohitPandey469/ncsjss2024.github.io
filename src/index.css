@@ -1,0 +1,55 @@
+/* ////////////////////global css font-family imports//////////////////////////// */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap");
+/* ///////////////////////////////////////////////////// */
+
+/* resets */
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  line-height: normal;
+  background-image: url("/background.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #030520;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 780px) {
+  body {
+    background-size: 150vw;
+  }
+}
+
+/* Phone styling */
+@media screen and (max-width: 590px) {
+  body {
+    background-size: 250vw;
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "zealiconProjects": [
+    {
+      "name": "Zealicon Website",
+      "desc": [
+        "An annually themed digital hub for Zealicon, the Techno-Cultural Extravaganza at JSSATEN!"
+      ],
+      "img": "ZEALICON@2x-min.png",
+      "projectLink": "https://zealicon.in",
+      "gitLink": "https://github.com/ncs-jss/Zealicon_2019",
+      "technologies": ["React", "Node.js"],
+      "year": 2022
+    },
+    {
+      "name": "Sherlocked",
+      "desc": [
+        "Sherlocked is a grueling online web based event played annually in Zealicon, where the participant has to solve the brainstorming questions to go ahead."
+      ],
+      "img": "sherlocked.png",
+      "projectLink": "https://github.com/ncs-jss/Sherlocked",
+      "gitLink": "https://github.com/ncs-jss/Sherlocked",
+      "technologies": ["React","MongoDB","Node"],
+      "year": 2022
+    },
+    {
+      "name": "Loot",
+      "desc": [
+        "An android application available on Play Store based on live location tracking. It's an annual event in Zealicon."
+      ],
+      "img": "loot.png",
+      "projectLink": "https://github.com/ncs-jss/loot",
+      "gitLink": "https://github.com/ncs-jss/loot",
+      "technologies": ["Django","Python","PostgreSQL"],
+      "year": 2022
+    }
+  ],
+  
+  "collegeProjects": [
+    {
+      "name": "JSS Infotech",
+      "desc": [
+        "A digital hub of knowledge, bringing you updates on notices, assignments, and placement opportunities."
+      ],
+      "img": "INFO APP@2x-min.png",
+      "projectLink": "http://210.212.85.155:8082",
+      "gitLink": "https://github.com/ncs-jss/HTTP_200",
+      "technologies": ["Django", "Python", "PostgreSQL"],
+      "year": 2021
+    },
+    {
+      "name": "MCQ Module",
+      "desc": [
+        "Picture this: an online theater for teachers and societies, where multiple-choice questions take the stage and the results pop up like magic tricks! Abracadabra, learning just got a whole lot snazzier!"
+      ],
+      "img": "MCQ MODULE@2x-min.png",
+      "projectLink": "https://github.com/ncs-jss/MCQ-Module",
+      "gitLink": "https://github.com/ncs-jss/MCQ-Module",
+      "technologies": ["Php", "Laravel", "MySQL"],
+      "year": 2020
+    },
+    {
+      "name": "Event Manager",
+      "desc": [
+        "A college event-tracking web app, keeping students informed about daily happenings on campus. Stay in the loop, never miss out!"
+      ],
+      "img": "EM@2x-min.png",
+      "projectLink": "https://github.com/ncs-jss",
+      "gitLink": "https://github.com/ncs-jss",
+      "technologies": ["React", "Node", "MongoDB"],
+      "year": 2019
+    },
+    {
+      "name": "Know Your College",
+      "desc": [
+        "'Know Your College', is a nifty web application that's your virtual compass for navigating the expansive world of JSS. It's your go-to guide for unraveling the intriguing corners of the college and its lively neighborhood."
+      ],
+      "img": "KYC.@2x-min.png",
+      "projectLink": "https://kyc.surge.sh",
+      "gitLink": "https://github.com/ncs-jss",
+      "technologies": ["React", "Node", "MongoDB"],
+      "year": 2018
+    },
+    {
+      "name": "Code Pad",
+      "desc": [
+        "An online IDE (compiler) for running programs in C, C++, Python, Java with frequent questions to solve."
+      ],
+      "img": "CODEPAD@2x-min.png",
+      "projectLink": "https://github.com/ncs-jss/Code-Pad",
+      "gitLink": "https://github.com/ncs-jss/Code-Pad",
+      "technologies": [],
+      "year": 2018
+    },
+    {
+      "name": "Plexus",
+      "desc": [
+        "It is an online platform to host all kinds of digital events like Quizes etc. without any friction or technical know-how."
+      ],
+      "img": "PLEXUS@2x-min.png",
+      "projectLink": "https://github.com/ncs-jss/plexus",
+      "gitLink": "https://github.com/ncs-jss/plexus",
+      "technologies": [],
+      "year": 2018
+    },
+    {
+      "name": "Registration Module",
+      "desc": [
+        "A platform for registration of students with record of their Unique IDs for various events like Zealicon."
+      ],
+      "img": "REGISTRATION MODULE@2x-min.png",
+      "projectLink": "https://github.com/ncs-jss/registration",
+      "gitLink": "https://github.com/ncs-jss/registration",
+      "technologies": [],
+      "year": 2018
+    },
+    {
+      "name": "T & P Portal",
+      "desc": [
+        "An online portal for managing & automating the recruitment procedure for T&P Centre."
+      ],
+      "img": "T&P PORTAL@2x-min.png",
+      "projectLink": "https://github.com/ncs-jss",
+      "gitLink": "https://github.com/ncs-jss",
+      "technologies": [],
+      "year": 2018
+    },
+    {
+      "name": "JSS Infotech App",
+      "desc": [
+        "An application version of the JSS Infoconnect mentioned above for Android devices."
+      ],
+      "img": "INFO APP@2x-min.png",
+      "projectLink": "http://210.212.85.155:8082",
+      "gitLink": "https://github.com/ncs-jss",
+      "technologies": [],
+      "year": 2021
+    }
+  ]
+}

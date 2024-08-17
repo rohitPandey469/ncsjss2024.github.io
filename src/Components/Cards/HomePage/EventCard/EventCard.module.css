@@ -1,0 +1,137 @@
+.container {
+    height: auto;
+    width:32.5rem;
+    border-radius: 0.75rem;
+    border: 0.498px solid #919191;
+    background: #030520;
+    overflow: hidden;
+}
+
+.imgContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+.img1,
+.img2 {
+    height: 18.95169rem;
+    overflow: hidden;
+    flex-shrink: 0;
+    background: lightgray 50% / cover no-repeat;
+    object-fit: cover;
+    transition:all 0.2s;
+    flex-grow: 1;
+    /* Scale and crop the image to fill the container */
+}
+
+.img1 {
+    width: 55%;
+    border-radius: 0 0 0 0;
+    /* clip: rect(0, 300px, 18.95169rem, 0); */
+    /* Define the clipping region (top, right, bottom, left) */
+}
+
+.img2 {
+    border-radius: 0 1.08294rem 0 0;
+    /* clip: rect(0, 10px, 18.95169rem, 0); */
+}
+.img1:hover {
+    transform: scale(1.02);
+    filter: brightness(1.2);
+}
+
+.img2:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+.imgBlur1,
+.imgBlur2 {
+    position: absolute;
+    top: 0;
+    width: 6.1875rem;
+    height: 18.875rem;
+    flex-shrink: 0;
+    background: linear-gradient(277deg, rgba(3, 5, 32, 0.00) -8.13%, #030520 95.93%);
+    filter: blur(10px);
+    z-index: 3;
+}
+
+.imgBlur1 {
+    left: 0px;
+}
+
+.imgBlur1 {
+    left: 85%;
+    transform: rotateY(180deg);
+}
+
+.contentContainer {
+    background-color: transparent;
+}
+
+.contentWrapper {
+    width: 100%;
+    margin: 2.5rem auto;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+
+
+.viewContainer {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.85413rem;
+    color: #7199FF;
+    transition: filter 0.1s;
+}
+
+
+.text {
+    color: #7199FF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 0.96088rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    /* 1.15306rem */
+    letter-spacing: 0.03844rem;
+    text-transform: capitalize;
+}
+
+.eventNameText {
+    color: var(--H2, #D9D9D9);
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    /* 1.8rem */
+    text-transform: capitalize;
+}
+
+.viewVectorImg {
+    width: 1.06769rem;
+    height: 1.06769rem;
+    fill: #7199FF;
+}
+
+.viewContainer:hover{
+    filter: brightness(0.8);
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        width: 100%;
+        min-width: 18rem;
+    }
+}

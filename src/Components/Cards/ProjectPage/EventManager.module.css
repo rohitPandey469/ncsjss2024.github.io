@@ -1,0 +1,310 @@
+.eventManagerContainer {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 100%;
+    border-radius: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    transition: all 1s ease-in-out;
+    border-radius: 0.5rem;
+    /* animation: fadeInOut 1s ease-out forwards; */
+}
+
+/* @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+   
+    100% {
+      opacity: 1;
+    }
+  } */
+
+.eventManagerImageContainer {
+    border-radius: 0.5rem;
+    background: transparent;
+    box-shadow: 0px 0px 20px 0px rgba(50, 95, 255, 0.15);
+    align-self: center;
+    overflow: hidden;
+    min-width: 18.5625rem;
+    height: auto;
+    border-radius: 0.5rem;
+    transition: all 0.5s ease;
+
+    @media screen and (min-width: 769px) {
+        width: 18.5625rem;
+        height: 18.5625rem;
+    }
+}
+
+.eventManagerImageContainer:hover {
+    box-shadow: 0px 0px 20px 0px rgba(50, 95, 255, 0.45);
+}
+
+.eventManagerImage {
+    background-color: transparent;
+    border: transparent;
+    outline: none;
+    box-sizing: border-box;
+    width: 18.5625rem;
+    flex-shrink: 0;
+    transform: scale(1.2);
+    border-radius: 0.5rem;
+    background: transparent;
+    box-shadow: 0px 0px 20px 0px rgba(50, 95, 255, 0.15);
+    transition: transform 0.3s ease;
+
+    @media screen and (min-width: 769px) {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.eventManagerImage:hover {
+    transform: scale(1.35);
+    filter: brightness(1.2);
+    /* Increase brightness on hover */
+    transition: all 0.3s ease-in-out;
+    /* Scale the image by 10% on hover */
+}
+
+.eventManagerContentContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0.5rem 0;
+    justify-content: flex-start;
+    max-width: 42rem;
+}
+
+
+
+.eventManagerContentHeaderWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+}
+
+.eventManagerContentName {
+    color: #FFF;
+    font-family: "Inter";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 80%;
+    letter-spacing: 0.025rem;
+    text-transform: capitalize;
+}
+
+.eventManagerContentTechContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.eventManagerContentTechWrapper {
+    display: flex;
+    padding: 0.25rem 0.75rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.21);
+}
+
+.eventManagerContentTech {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.01rem;
+    text-transform: capitalize;
+
+}
+
+.eventManagerContentDescription {
+    color: #C1C1C1;
+    font-family: Inter;
+    font-size: 1.1875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 1.78125rem */
+    letter-spacing: 0.01188rem;
+    text-transform: capitalize;
+    margin-top: 1rem;
+    padding-right: 1rem;
+}
+
+.eventManagerContentLinkWrapper, .eventManagerContentLinkWrapperGit{
+    transition: filter 0.1s;
+}
+
+.eventManagerContentLinksContainer {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.eventManagerContentLinkWrapper:hover, .eventManagerContentLinkWrapperGit:hover{
+    filter: brightness(0.8);
+}
+
+.eventManagerContentLinkWrapper {
+    text-decoration: none;
+    display: flex;
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.25rem;
+    background: rgba(255, 255, 255, 0.14);
+
+}
+
+.eventManagerContentLinkImageView {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.eventManagerContentLink {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 1.2rem */
+    letter-spacing: 0.04rem;
+
+}
+
+
+
+.eventManagerContentLinkWrapperGit {
+    text-decoration: none;
+    display: flex;
+    height: 2.5rem;
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.25rem;
+    background: #34363A;
+}
+
+.eventManagerContentLinkImageGit {
+    width: 1.49994rem;
+    height: 1.5rem;
+    flex-shrink: 0;
+    border-radius: 0.2475rem;
+    /* background: #FFF; */
+}
+
+@media screen and (max-width: 770px) {
+    .eventManagerContainer {
+        flex-direction: column;
+        padding-bottom: 1rem;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .eventManagerImageContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.5rem;
+
+        overflow: hidden;
+    }
+
+    .eventManagerImage {
+        width: 97%;
+        margin: 0 auto;
+        border-radius: 0.5rem;
+    }
+
+    .eventManagerContentContainer {
+        align-items: center;
+        gap: 3rem;
+        justify-content: center;
+    }
+
+    .eventManagerContentTechWrapper {
+        margin: 0rem 0.1rem 1rem 0.1rem;
+    }
+
+    .eventManagerContentHeaderWrapper {
+        align-items: center;
+        justify-content: center;
+        margin: 0rem auto;
+    }
+
+    .eventManagerContentDescription {
+        margin: 1rem 1.5rem 1.5rem 1.5rem;
+        padding: 0;
+    }
+
+    .eventManagerContentWrapper {
+        text-align: center;
+    }
+
+    .eventManagerContentLinksContainer {
+        margin-top: -2rem;
+        gap: 0rem;
+    }
+
+    .eventManagerContentLinkWrapper {
+        margin: 0;
+        transform: scale(0.8);
+    }
+
+    .eventManagerContentLinkWrapperGit {
+        transform: scale(0.8);
+    }
+
+    .eventManagerContentName {
+        font-size: 1.895rem;
+        max-width: 80%;
+
+    }
+
+    .eventManagerContentDescription {
+        font-size: 1.1rem;
+    }
+
+    .eventManagerContentTech {
+        font-size: .8rem;
+    }
+}
+
+@media (min-width:0px) and (max-width:400px) {
+
+    .eventManagerContentLinkWrapper,
+    .eventManagerContentLinkWrapperGit {
+        gap: 0.6rem;
+    }
+
+    .eventManagerContentDescription {
+        font-size: 0.95rem;
+    }
+
+    .eventManagerContentTech {
+        font-size: 0.65rem;
+    }
+
+    .eventManagerContentTechWrapper {
+        margin: 0rem 0.1rem 0.5rem 0.1rem;
+    }
+
+    .eventManagerContentLink {
+        font-size: 0.8rem;
+    }
+}
