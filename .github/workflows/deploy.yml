@@ -50,7 +50,7 @@ jobs:
           path: ./dist
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/deploy-pages@v2
+        uses: actions/deploy-pages@v4.0.5
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          artifact_name: production-files
