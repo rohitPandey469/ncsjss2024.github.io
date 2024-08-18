@@ -22,7 +22,7 @@ export default function Header(){
 
     return(
         <header className="nav-header">
-            <NavLink to="/" onClick={scrollToTop}><img className="nav-logo" src='./ncs-logo.svg' alt='NCS logo'/></NavLink>
+            <NavLink to="/ncsjss2024.github.io/" onClick={scrollToTop}><img className="nav-logo" src='./ncs-logo.svg' alt='NCS logo'/></NavLink>
             {
                 width > 590 ?
                 <DeskTopNav/> :
@@ -40,7 +40,7 @@ function DeskTopNav(){
                     <li>
                         <NavLink 
                             className="header-nav-link" 
-                            to="/" 
+                            to="/ncsjss2024.github.io/" 
                             activeClassName="active"
                             onClick={scrollToTop}
                         >
@@ -50,7 +50,7 @@ function DeskTopNav(){
                     <li>
                         <NavLink
                             className="header-nav-link"
-                            to="/projects"
+                            to="/ncsjss2024.github.io/projects"
                             onClick={scrollToTop}
                             activeClassName="active"
                         >
@@ -60,7 +60,7 @@ function DeskTopNav(){
                     <li>
                         <NavLink
                             className="header-nav-link"
-                            to="/team"
+                            to="/ncsjss2024.github.io/team"
                             onClick={scrollToTop}
                             activeClassName="active"
                         >
@@ -70,7 +70,7 @@ function DeskTopNav(){
                     <li>
                         <NavLink
                             className="header-nav-link"
-                            to="/alumni"
+                            to="/ncsjss2024.github.io/alumni"
                             onClick={scrollToTop}
                             activeClassName="active"
                         >
@@ -190,7 +190,7 @@ function SideNav({menuOpen, setMenuOpen}){
                     <li>
                         <NavLink 
                             className="mobile-header-nav-link" 
-                            to="/" 
+                            to="/ncsjss2024.github.io/" 
                             onClick={scrollToTop}
                             activeClassName="active"
                         >
@@ -200,7 +200,7 @@ function SideNav({menuOpen, setMenuOpen}){
                     <li>
                         <NavLink
                             className="mobile-header-nav-link"
-                            to="/projects"
+                            to="/ncsjss2024.github.io/projects"
                             onClick={scrollToTop}
                             activeClassName="active"
                         >
@@ -210,7 +210,7 @@ function SideNav({menuOpen, setMenuOpen}){
                     <li>
                         <NavLink
                             className="mobile-header-nav-link"
-                            to="/team"
+                            to="/ncsjss2024.github.io/team"
                             onClick={scrollToTop}
                             activeClassName="active"
                         >
@@ -220,7 +220,7 @@ function SideNav({menuOpen, setMenuOpen}){
                     <li>
                         <NavLink
                             className="mobile-header-nav-link"
-                            to="/alumni"
+                            to="/ncsjss2024.github.io/alumni"
                             onClick={scrollToTop}
                             activeClassName="active"
                         >

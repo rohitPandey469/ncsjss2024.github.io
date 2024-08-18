@@ -1,15 +1,50 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
 import "./index.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import App from "./App";
+import Home from "./Pages/Home/Home";
+import Projects from "./Pages/Projects/Projects";
+import Team from "./Pages/Team/Team";
+import Alumni from "./Pages/Alumni/Alumni";
+import Post from "./Components/Instagram/Post";
+import Error from "./Pages/Error/Error";
+
+const router = createBrowserRouter([
+  {
+    path: "/ncsjss2024.github.io/",
+    element: <App />,
+    children: [
+      {
+        path: "/ncsjss2024.github.io/",
+        element: <Home />,
+      },
+      {
+        path: "/ncsjss2024.github.io/projects",
+        element: <Projects />,
+      },
+      {
+        path: "/ncsjss2024.github.io/team",
+        element: <Team />,
+      },
+      {
+        path: "/ncsjss2024.github.io/alumni",
+        element: <Alumni />,
+      },
+      {
+        path: "/ncsjss2024.github.io/post",
+        element: <Post />,
+      },
+      {
+        path: "*",
+        element: <Error />,
+      },
+    ],
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/*" element={<App />} />
-      </Routes>
-    </BrowserRouter>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
