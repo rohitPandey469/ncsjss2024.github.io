@@ -14,7 +14,7 @@ export default function TeamCard(props) {
                     <div className={styles.flipcardfront}>
                         <div className={styles.cardimg}>
                             <img 
-                                src={`${window.location.origin}/team/${props.category}/${props.name.split(" ")[0]}.jpg`} 
+                                src={`${window.location.origin}/ncsjss2024.github.io/team/${props.category}/${props.name.split(" ")[0]}.jpg`} 
                                 alt={props.name}
                             />
                         </div>
@@ -26,7 +26,7 @@ export default function TeamCard(props) {
                     <div className={styles.flipcardback}>
                         <div className={styles.card2img}>
                             <img 
-                                src={`${window.location.origin}/team/${props.category}/${props.name.split(" ")[0]}.jpg`} 
+                                src={`${window.location.origin}/ncsjss2024.github.io/team/${props.category}/${props.name.split(" ")[0]}.jpg`} 
                                 alt={props.name}
                             />
                         </div>
@@ -41,7 +41,7 @@ export default function TeamCard(props) {
                                         <a key={socialName} href={social[socialName]} target='blank'>
                                             <img 
                                                 className={styles.socials} 
-                                                src={`${window.location.origin}/socials/${socialName}.svg`}
+                                                src={`${window.location.origin}/ncsjss2024.github.io/socials/${socialName}.svg`}
                                                 alt="" 
                                             />
                                         </a>

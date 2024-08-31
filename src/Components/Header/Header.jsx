@@ -22,7 +22,7 @@ export default function Header(){
 
     return(
         <header className="nav-header">
-            <NavLink to="/ncsjss2024.github.io/" onClick={scrollToTop}><img className="nav-logo" src='./ncs-logo.svg' alt='NCS logo'/></NavLink>
+            <NavLink to="/ncsjss2024.github.io/" onClick={scrollToTop}><img className="nav-logo" src='/ncsjss2024.github.io/ncs-logo.svg' alt='NCS logo'/></NavLink>
             {
                 width > 590 ?
                 <DeskTopNav/> :

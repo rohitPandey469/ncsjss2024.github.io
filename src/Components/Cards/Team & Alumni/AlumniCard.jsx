@@ -16,8 +16,8 @@ export default function AlumniCard(props) {
                         <img 
                             src={
                                 props.name !== "Devansh Gera" ? 
-                                `${window.location.origin}/alumni/${props.category}/${props.name.split(" ")[0]}.jpg` :
-                                `${window.location.origin}/alumni/${props.category}/Devansh2.jpg`
+                                `${window.location.origin}/ncsjss2024.github.io/alumni/${props.category}/${props.name.split(" ")[0]}.jpg` :
+                                `${window.location.origin}/ncsjss2024.github.io/alumni/${props.category}/Devansh2.jpg`
                             } 
                             alt={props.name}
                         />
@@ -31,8 +31,8 @@ export default function AlumniCard(props) {
                             <img 
                                 src={
                                     props.name !== "Devansh Gera" ? 
-                                    `${window.location.origin}/alumni/${props.category}/${props.name.split(" ")[0]}.jpg` :
-                                    `${window.location.origin}/alumni/${props.category}/Devansh2.jpg`
+                                    `${window.location.origin}/ncsjss2024.github.io/alumni/${props.category}/${props.name.split(" ")[0]}.jpg` :
+                                    `${window.location.origin}/ncsjss2024.github.io/alumni/${props.category}/Devansh2.jpg`
                                 } 
                                 alt={props.name}
                             />
@@ -44,7 +44,7 @@ export default function AlumniCard(props) {
                             <a href={props.linkedin} target='blank'>
                                 <img 
                                     className={styles.socials}
-                                    src={`${window.location.origin}/socials/linkedin.svg`}
+                                    src={`${window.location.origin}/ncsjss2024.github.io/socials/linkedin.svg`}
                                     alt=""
                                 />
                             </a>

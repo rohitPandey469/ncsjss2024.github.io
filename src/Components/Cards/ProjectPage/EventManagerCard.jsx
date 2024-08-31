@@ -16,7 +16,7 @@ function EventManagerCard({
     technologies = ["Python", "SQL", "Django"],
   },
 }) {
-  const getImageUrl = (img) => `/projects/${img}`;
+  const getImageUrl = (img) => `/ncsjss2024.github.io/projects/${img}`;
   return (
     <div
       className={`${styles.eventManagerContainer}
