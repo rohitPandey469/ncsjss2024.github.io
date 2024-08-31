@@ -13,7 +13,7 @@ const Footer = () => {
             target="blank"
           >
             <img
-              src={"./socials/instagram.svg"}
+              src={"/ncsjss2024.github.io/socials/instagram.svg"}
               alt="https://intagram.com"
               className="footer-social-link-image"
               target="blank"
@@ -26,7 +26,7 @@ const Footer = () => {
             target="blank"
           >
             <img
-              src={"./socials/facebook.svg"}
+              src={"/ncsjss2024.github.io/socials/facebook.svg"}
               alt="https://facebook.com"
               className="footer-social-link-image"
             />
@@ -38,7 +38,7 @@ const Footer = () => {
             target="blank"
           >
             <img
-              src={"./socials/behance.svg"}
+              src={"/ncsjss2024.github.io/socials/behance.svg"}
               alt=""
               className="footer-social-link-image"
             />
@@ -50,7 +50,7 @@ const Footer = () => {
             target="blank"
           >
             <img
-              src={"./socials/github.svg"}
+              src={"/ncsjss2024.github.io/socials/github.svg"}
               alt=""
               className="footer-social-link-image"
             />
