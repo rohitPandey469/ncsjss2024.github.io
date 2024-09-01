@@ -1,6 +1,6 @@
 {
   "name": "ncs-website",
-  "homepage" : "https://hackncs.in/",
+  "homepage" : "http://hackncs.in/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
