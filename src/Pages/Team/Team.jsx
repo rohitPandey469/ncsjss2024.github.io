@@ -118,100 +118,6 @@ const teamData = {
   "4_year": [
     {
       id: 1,
-      name: "Anadee",
-      role: "Chief Executive Member",
-      socials: [
-        { linkedin: "https://www.linkedin.com/in/anadee11/" },
-        { github: "https://github.com/Anadee11" },
-        { x: "https://twitter.com/Anadee11_?s=08" },
-      ],
-    },
-    {
-      id: 2,
-      name: "Anant Mishra",
-      role: "CTC and HOC Web",
-      socials: [
-        { linkedin: "https://www.linkedin.com/in/anant-mishra-4220231bb/" },
-        { github: "https://github.com/Anant7393" },
-        { x: "https://twitter.com/AnantMi_" },
-      ],
-    },
-    {
-      id: 3,
-      name: "Jayati Dixit",
-      role: "General Secretary",
-      socials: [
-        { linkedin: "https://www.linkedin.com/in/jayati-dixit-931a98203/" },
-        { github: "https://github.com/Jayati15" },
-        { x: "https://twitter.com/Evren_1502" },
-      ],
-    },
-    {
-      id: 4,
-      name: "Dev Batra",
-      role: "HOC Programming",
-      socials: [
-        { linkedin: "https://www.linkedin.com/in/dev-batra-784415201/" },
-        { github: "https://github.com/Devv14" },
-      ],
-    },
-    {
-      id: 5,
-      name: "Hiteshwaram Dubey",
-      role: "Financial Head",
-      socials: [
-        { linkedin: "https://www.linkedin.com/in/hiteshwarm-dubey-2240b3213/" },
-      ],
-    },
-    {
-      id: 6,
-      name: "Om Kumar",
-      role: "HOC Design",
-      socials: [
-        { linkedin: "https://www.linkedin.com/in/om-kumar-707762201/" },
-        { github: "https://github.com/om-1115" },
-      ],
-    },
-    {
-      id: 7,
-      name: "Parth Agarwal",
-      role: "Creative Head",
-      socials: [
-        { linkedin: "https://www.linkedin.com/in/parth-agarwal-484075201/" },
-      ],
-    },
-    {
-      id: 8,
-      name: "Pavitra Lalwani",
-      role: "Technical Head",
-      socials: [
-        { linkedin: "https://www.linkedin.com/in/pavitra-lalwani-198637201/" },
-        { github: "https://github.com/pavitra-lalwani" },
-      ],
-    },
-    {
-      id: 9,
-      name: "Janvi Soni",
-      role: "Operations Head",
-      socials: [
-        { linkedin: "https://www.linkedin.com/in/janvi-soni-787404170/" },
-        { github: "https://github.com/janvi-soni" },
-      ],
-    },
-    {
-      id: 10,
-      name: "Aditi Sahu",
-      role: "HOC Technical",
-      socials: [
-        { linkedin: "https://www.linkedin.com/in/aditi-sahu-3b4895216/" },
-        { github: "https://github.com/Aditi9800" },
-      ],
-    },
-  ],
-
-  "3_year": [
-    {
-      id: 1,
       name: "Aayush Aryan",
       role: "Developer",
       socials: [
@@ -222,7 +128,8 @@ const teamData = {
     {
       id: 2,
       name: "Abhishek Pandey",
-      role: "Developer",
+      // role: "Developer",
+      role: "HOC Web",
       socials: [
         { github: "https://github.com/ABHISHEK-PANDEY2" },
         { x: "https://x.com/abhishek_3188?t=4z92w8Qtp6BNHKMGHrCAcw&s=09" },
@@ -231,7 +138,8 @@ const teamData = {
     {
       id: 3,
       name: "Adarsh Bajpai",
-      role: "Programmer",
+      // role: "Programmer",
+      role: "CTC",
       socials: [
         { linkedin: "https://www.linkedin.com/in/adarshbaj" },
         { github: "https://github.com/AdarshBajpai67" },
@@ -240,7 +148,7 @@ const teamData = {
     {
       id: 4,
       name: "Aditi pandey",
-      role: "Designer",
+      role: "HOC Design",
       socials: [
         { linkedin: "https://www.linkedin.com/in/aditi-pandey-3a6381226/" },
         { behance: "https://www.behance.net/aditipandey7" },
@@ -249,7 +157,8 @@ const teamData = {
     {
       id: 5,
       name: "Alok Ranjan",
-      role: "Android Developer",
+      role: "Chief Executive Member",
+      // club_role: "Android Developer",
       socials: [
         { linkedin: "https://www.linkedin.com/in/alokandro/" },
         { github: "https://github.com/arpitmx" },
@@ -342,7 +251,8 @@ const teamData = {
     {
       id: 15,
       name: "Shreyansh Agrawal",
-      role: "Programmer",
+      // role: "Programmer",
+      role: "Financial Head",
       socials: [
         {
           linkedin: "https://www.linkedin.com/in/shreyansh-agrawal-71b960227/",
@@ -353,7 +263,8 @@ const teamData = {
     {
       id: 16,
       name: "Urvashi Shukla",
-      role: "Developer",
+      // role: "Developer",
+      role: "General Secretary",
       socials: [
         { linkedin: "https://www.linkedin.com/in/urvashi-shukla/" },
         { github: "https://github.com/urvashi1210" },
@@ -363,7 +274,8 @@ const teamData = {
     {
       id: 17,
       name: "Utsav Upadhyay",
-      role: "Programmer",
+      // role: "Programmer",
+      role: "HOC Programming",
       socials: [
         { linkedin: "https://www.linkedin.com/in/utsavup" },
         { github: "https://github.com/UtsavUpadhyay08" },
@@ -381,10 +293,131 @@ const teamData = {
     {
       id: 19,
       name: "Yogita Singh",
-      role: "Designer",
+      role: "Creative Head",
       socials: [
         { linkedin: "https://www.linkedin.com/in/yogita-singh-006a75168/" },
         { behance: "https://www.behance.net/yogitasingh9" },
+      ],
+    },
+  ],
+
+  "3_year": [
+    {
+      id: 1,
+      name: "Insha Naseem",
+      role: "Designer",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/insha-naseem-753174199/" },
+        { medium: "https://medium.com/@insharham" },
+      ],
+    },
+    {
+      id: 2,
+      name: "Krati Bajpai",
+      role: "Programmer",
+      socials: [
+        { linkedin: "https://in.linkedin.com/in/krati-bajpai-385001292" },
+        { github: "https://github.com/kra15" },
+      ],
+    },
+    {
+      id: 3,
+      name: "Kushagra Singh",
+      role: "ML Developer",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/kushagra-singh-100b27256/" },
+        { github: "https://github.com/Kushagra22Singh" },
+      ],
+    },
+    {
+      id: 4,
+      name: "Misbah Azam",
+      role: "Designer",
+      socials: [
+        { linkedin: "http://www.linkedin.com/in/misbah-azam-6945a1205" },
+        { behance: "https://www.behance.net/pixcelcreative" },
+      ],
+    },
+    {
+      id: 5,
+      name: "Mohit Singh",
+      role: "Android Developer",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/mohit-singh-056934195/" },
+        { github: "https://github.com/mohitsingh35" },
+      ],
+    },
+    {
+      id: 6,
+      name: "Parth Mishra",
+      role: "Programmer",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/parth-mishra-b3114824b/" },
+        { instagram: "https://www.instagram.com/its_parth1023/" },
+      ],
+    },
+    {
+      id: 7,
+      name: "Piyush Yadav",
+      role: "Developer",
+      socials: [
+        { instagram: "https://www.instagram.com/piyush_4r7/" },
+        { github: "https://github.com/piyushya" },
+        { linkedin: "https://www.linkedin.com/in/piyushya/"},
+      ],
+    },
+    {
+      id: 8,
+      name: "Priyanshu Sharma",
+      role: "Developer",
+      socials: [
+        { github: "https://github.com/Priyanshu525" },
+      ],
+    },
+    {
+      id: 9,
+      name: "Rohit Pandey",
+      role: "Developer",
+      socials: [
+        { instagram: "https://www.instagram.com/_rohit._n.d.b.td/" },
+        { linkedin: "https://www.linkedin.com/in/rohit-pandey-2500b6215/" },
+        { github: "https://github.com/rohitPandey469" },
+      ],
+    },
+    {
+      id: 10,
+      name: "Sankalp Saxena",
+      role: "Android Developer",
+      socials: [
+        { linkedin: "http://linkedin.com/in/sankalpsaxena04" },
+        { github: "http://github.com/sankalpsaxena04" },
+      ],
+    },
+    {
+      id: 11,
+      name: "Unnat Kumar Agarwal",
+      role: "Backend Developer",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/unnat-kumar-agarwal-5a1969257" },
+        { github: "https://github.com/unnat1654" },
+      ],
+    },
+    {
+      id: 12,
+      name: "Utkarsh Gupta",
+      role: "Designer",
+      socials: [
+        { instagram: "https://www.instagram.com/desandlerr?igsh=NTc4MTIwNjQ2YQ==" },
+        { behance: "https://www.behance.net/utkarshgupta46" },
+      ],
+    },
+    {
+      id: 13,
+      name: "Yash Jha",
+      role: "Programmer",
+      socials: [
+        { linkedin: "http://www.linkedin.com/in/yash-jha-5billion" },
+        { github: "https://github.com/5ku11Cru5h3r" },
       ],
     },
   ],

@@ -25,6 +25,8 @@ export default function Team() {
   const textRef1 = useRef(null);
   const strokeRef2 = useRef(null);
   const textRef2 = useRef(null);
+  const strokeRef3 = useRef(null);
+  const textRef3 = useRef(null);
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
       gsap.to(strokeRef1.current, {
@@ -42,6 +44,16 @@ export default function Team() {
         duration: 0.5,
         scrollTrigger: {
           trigger: textRef2.current,
+          toggleActions: "restart none reverse none",
+          start: "center 70%",
+          end: "center 70%",
+        },
+      });
+      gsap.to(strokeRef3.current, {
+        width: "90vw",
+        duration: 0.5,
+        scrollTrigger: {
+          trigger: textRef3.current,
           toggleActions: "restart none reverse none",
           start: "center 70%",
           end: "center 70%",
@@ -67,11 +79,34 @@ export default function Team() {
             from years past.
           </p>
         </div>
+        {/* 2023 -------------------------------------------------- */}
         <div className={styles.partition}>
           <div className={styles.line} ref={textRef1}>
-            2022
+            2023
           </div>
           <div className={styles.hrline} ref={strokeRef1}></div>
+          <div className={styles.underlay}></div>
+        </div>
+        {/* CARDS------------------------------- */}
+        <div className={styles.cardcont}>
+          {alumniData["2023"].map((member) => {
+            return (
+              <AlumniCard
+                key={member.id}
+                name={member.name}
+                role={member.role}
+                linkedin={member.linkedin}
+                category={"2023"}
+              />
+            );
+          })}
+        </div>
+        {/* 2022 -------------------------------------------------- */}
+        <div className={styles.partition}>
+          <div className={styles.line} ref={textRef2}>
+            2022
+          </div>
+          <div className={styles.hrline} ref={strokeRef2}></div>
           <div className={styles.underlay}></div>
         </div>
         {/* CARDS------------------------------- */}
@@ -90,10 +125,10 @@ export default function Team() {
         </div>
         {/* 2021 -------------------------------------------------- */}
         <div className={styles.partition}>
-          <div className={styles.line} ref={textRef2}>
+          <div className={styles.line} ref={textRef3}>
             2021
           </div>
-          <div className={styles.hrline} ref={strokeRef2}></div>
+          <div className={styles.hrline} ref={strokeRef3}></div>
           <div className={styles.underlay}></div>
         </div>
         {/* CARDS------------------------------- */}
@@ -104,7 +139,7 @@ export default function Team() {
                 key={member.id}
                 name={member.name}
                 role={member.role}
-                linkedin={member.linkedin}
+                linkedin={member.socials.linkedin}
                 category={"2021"}
               />
             );
@@ -116,121 +151,269 @@ export default function Team() {
   );
 }
 
-const alumniData = {
-  2021: [
+// persist only 3 years of alumni data
+
+const alumniData = { 
+    2021 : [
     {
       id: 1,
       name: "Devansh Chaudhary",
-      linkedin: "https://www.linkedin.com/in/rex12543/",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/rex12543/", }
+      ]
     },
     {
       id: 2,
       name: "Devansh Gera",
-      linkedin: "https://www.linkedin.com/in/devansh-gera-62a2bb16b",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/devansh-gera-62a2bb16b", }
+      ]
     },
     {
       id: 3,
       name: "Mansi Gupta",
-      linkedin: "https://www.linkedin.com/in/mansi-gupta-a1195a91/",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/mansi-gupta-a1195a91/", }
+      ]
     },
     {
       id: 4,
       name: "Mohammad Zaid Ansari",
-      linkedin: "https://www.linkedin.com/in/mohammad-zaid-ansari-927305174",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/mohammad-zaid-ansari-927305174", }
+      ]
     },
     {
       id: 5,
       name: "Prajwal Shirur",
-      linkedin: "https://www.linkedin.com/in/prajwal-ss-054a29185/",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/prajwal-ss-054a29185/", }
+      ]
     },
     {
       id: 6,
       name: "Pranav Kumar",
-      linkedin: "https://www.linkedin.com/in/pranavnegi77",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/pranavnegi77", }
+      ]
     },
     {
       id: 7,
       name: "Rajat Verma",
-      linkedin: "https://www.linkedin.com/in/rajat2502",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/rajat2502", }
+      ]
     },
     {
       id: 8,
       name: "Saksham Raghuvanshi",
-      linkedin: "https://www.linkedin.com/in/saksham-raghuvanshi-0a1b58170/",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/saksham-raghuvanshi-0a1b58170/", }
+      ]
     },
     {
       id: 9,
       name: "Sharad Mehrotra",
-      linkedin: "https://www.linkedin.com/in/sharad2307/",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/sharad2307/", }
+      ]
     },
     {
       id: 10,
       name: "Viral Luke",
-      linkedin: "https://www.linkedin.com/in/viral-luke-0615291aa",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/viral-luke-0615291aa", }
+      ]
     },
   ],
-
-  2022: [
+  2022 : [
     {
       id: 1,
       name: "Kalpit Arya",
-      linkedin: "https://www.linkedin.com/in/kalpit-arya/?originalSubdomain=in",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/kalpit-arya/?originalSubdomain=in", }
+      ]
+
     },
     {
       id: 2,
       name: "Ayush Kumar",
-      linkedin:
-        "https://www.linkedin.com/in/ayush-kumar-10bb0b197/?originalSubdomain=in",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/ayush-kumar-10bb0b197/?originalSubdomain=in", }
+      ]
+
     },
     {
       id: 3,
       name: "Shruti Agarwal",
-      linkedin: "https://www.linkedin.com/in/shruti-ag/",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/shruti-ag/", }
+      ]
+
     },
     {
       id: 4,
       name: "Anurag Srivastava",
-      linkedin: "https://www.linkedin.com/in/singingapple/",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/singingapple/", }
+      ]
+
     },
     {
       id: 5,
       name: "Ojuswi Rastogi",
-      linkedin: "https://www.linkedin.com/in/ojuswizard/",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/ojuswizard/", }
+      ]
+
     },
     {
       id: 6,
       name: "Vaibhav Shukla",
-      linkedin: "https://www.linkedin.com/in/vaibhav-shukla-7a2a0b196",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/vaibhav-shukla-7a2a0b196", }
+      ]
+
     },
     {
       id: 7,
       name: "Aditee Singh",
-      linkedin: "Event Head",
+      socials: [
+        { linkedin: "", }
+      ]
+
     },
     {
       id: 8,
       name: "Naved Akhtar",
-      linkedin: "https://www.linkedin.com/in/naved-akhtar-54b5ab146/",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/naved-akhtar-54b5ab146/", }
+      ]
+
     },
     {
       id: 9,
       name: "Mihir Sahai",
-      linkedin: "https://www.linkedin.com/in/mihir-sahai-964228191/",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/mihir-sahai-964228191/", }
+      ]
+
     },
     {
       id: 10,
       name: "Paarth Agarwal",
-      linkedin: "https://www.linkedin.com/in/paarth17032000",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/paarth17032000", }
+      ]
+
     },
     {
       id: 11,
       name: "Shivam Singh",
-      linkedin: "https://www.linkedin.com/in/shivamsingh-07",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/shivamsingh-07", }
+      ]
+
     },
     {
       id: 12,
       name: "Shrey Jain",
-      linkedin: "https://www.linkedin.com/in/shrey-jain-3587161a1/",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/shrey-jain-3587161a1/", }
+      ]
+
     },
   ],
-};
+    2023 : [
+    {
+      id: 1,
+      name: "Anadee",
+      role: "Chief Executive Member",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/anadee11/" },
+        { github: "https://github.com/Anadee11" },
+        { x: "https://twitter.com/Anadee11_?s=08" },
+      ],
+    },
+    {
+      id: 2,
+      name: "Anant Mishra",
+      role: "CTC and HOC Web",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/anant-mishra-4220231bb/" },
+        { github: "https://github.com/Anant7393" },
+        { x: "https://twitter.com/AnantMi_" },
+      ],
+    },
+    {
+      id: 3,
+      name: "Jayati Dixit",
+      role: "General Secretary",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/jayati-dixit-931a98203/" },
+        { github: "https://github.com/Jayati15" },
+        { x: "https://twitter.com/Evren_1502" },
+      ],
+    },
+    {
+      id: 4,
+      name: "Dev Batra",
+      role: "HOC Programming",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/dev-batra-784415201/" },
+        { github: "https://github.com/Devv14" },
+      ],
+    },
+    {
+      id: 5,
+      name: "Hiteshwaram Dubey",
+      role: "Financial Head",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/hiteshwarm-dubey-2240b3213/" },
+      ],
+    },
+    {
+      id: 6,
+      name: "Om Kumar",
+      role: "HOC Design",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/om-kumar-707762201/" },
+        { github: "https://github.com/om-1115" },
+      ],
+    },
+    {
+      id: 7,
+      name: "Parth Agarwal",
+      role: "Creative Head",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/parth-agarwal-484075201/" },
+      ],
+    },
+    {
+      id: 8,
+      name: "Pavitra Lalwani",
+      role: "Technical Head",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/pavitra-lalwani-198637201/" },
+        { github: "https://github.com/pavitra-lalwani" },
+      ],
+    },
+    {
+      id: 9,
+      name: "Janvi Soni",
+      role: "Operations Head",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/janvi-soni-787404170/" },
+        { github: "https://github.com/janvi-soni" },
+      ],
+    },
+    {
+      id: 10,
+      name: "Aditi Sahu",
+      role: "HOC Technical",
+      socials: [
+        { linkedin: "https://www.linkedin.com/in/aditi-sahu-3b4895216/" },
+        { github: "https://github.com/Aditi9800" },
+      ],
+    },]
+  };
