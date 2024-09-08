@@ -353,7 +353,6 @@ const teamData = {
       role: "Programmer",
       socials: [
         { linkedin: "https://www.linkedin.com/in/parth-mishra-b3114824b/" },
-        { instagram: "https://www.instagram.com/its_parth1023/" },
       ],
     },
     {
@@ -361,7 +360,6 @@ const teamData = {
       name: "Piyush Yadav",
       role: "Developer",
       socials: [
-        { instagram: "https://www.instagram.com/piyush_4r7/" },
         { github: "https://github.com/piyushya" },
         { linkedin: "https://www.linkedin.com/in/piyushya/"},
       ],
@@ -379,7 +377,6 @@ const teamData = {
       name: "Rohit Pandey",
       role: "Developer",
       socials: [
-        { instagram: "https://www.instagram.com/_rohit._n.d.b.td/" },
         { linkedin: "https://www.linkedin.com/in/rohit-pandey-2500b6215/" },
         { github: "https://github.com/rohitPandey469" },
       ],
@@ -407,7 +404,6 @@ const teamData = {
       name: "Utkarsh Gupta",
       role: "Designer",
       socials: [
-        { instagram: "https://www.instagram.com/desandlerr?igsh=NTc4MTIwNjQ2YQ==" },
         { behance: "https://www.behance.net/utkarshgupta46" },
       ],
     },

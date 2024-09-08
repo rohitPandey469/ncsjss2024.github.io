@@ -17,6 +17,7 @@ import recruitment from "./assets/recruitment.png"
 import gsoc from "./assets/gsoc.jpg"
 import hackout from "./assets/hackout.jpg"
 import workshop from "./assets/orientation.jpg"
+import urvashi_utsav from "./assets/uravshi_utsav.jpg"
 import './Swiper.css'
 
 export default function Slider(){
@@ -92,6 +93,12 @@ export default function Slider(){
                 <img 
                     src={workshop}
                     alt={"Programming Workshop"}
+                />
+            </SwiperSlide>
+            <SwiperSlide>
+                <img 
+                    src={urvashi_utsav}
+                    alt={"Urvashi and Utsav placement"}
                 />
             </SwiperSlide>
           </Swiper>
